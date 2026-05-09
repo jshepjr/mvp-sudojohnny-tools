@@ -47,6 +47,18 @@ Open-source intelligence and reconnaissance — the "know before you knock" laye
 - [Shodan CLI](https://github.com/achillean/shodan-python) — Query Shodan from the terminal.
 - [waybackurls](https://github.com/tomnomnom/waybackurls) — Pull historical URLs from the Wayback Machine.
 
+### Web-Based OSINT Services
+
+No install, no API key — just open a tab and dig.
+
+- [Shodan](https://www.shodan.io) — Search engine for internet-connected devices; find exposed services, ICS, cameras, and misconfigured hosts.
+- [VirusTotal](https://www.virustotal.com/gui/home/upload) — Upload a file, hash, URL, or IP and check it against 70+ AV engines and threat-intel feeds.
+- [Have I Been Pwned](https://haveibeenpwned.com) — Check if an email or password has appeared in a known data breach.
+- [Wayback Machine](https://web.archive.org) — Internet Archive snapshots; recover deleted pages and track how a site has changed over time.
+- [WiGLE](https://wigle.net) — Crowdsourced map of Wi-Fi networks and cell towers worldwide; useful for wireless recon and geolocation.
+- [OSINT Industries](https://www.osint.industries) — Reverse-lookup engine: feed it an email or phone, get back linked accounts across 600+ platforms.
+- [Insecam](https://www.insecam.org) — Directory of unsecured/public IP cameras worldwide; cautionary tale on default credentials and exposure.
+
 ## Offensive Security
 
 Red-team and pentest tooling I trust. Use only on systems you own or have written authorization for.
