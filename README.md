@@ -8,7 +8,7 @@
 
 ## About
 
-I'm a full-stack developer and IT/security consultant working across healthcare IT, compliance (HIPAA, NIST CSF), infrastructure deployment, and Sec+ certification prep. This list is what I keep bookmarked, scripted, or running on a daily basis.
+I'm a full-stack developer and IT/security consultant working across healthcare IT, compliance (HIPAA, NIST CSF), and infrastructure deployment. This list is what I keep bookmarked, scripted, or running on a daily basis.
 
 Tools are grouped by what I use them **for**, not by what kind of tool they are. Each entry gets one line. If I had to write a paragraph to justify it, it's not on the list.
 
