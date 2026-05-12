@@ -16,6 +16,7 @@ Tools are grouped by what I use them **for**, not by what kind of tool they are.
 
 ## Table of Contents
 
+- [Runbooks](#runbooks)
 - [OSINT & Recon](#osint--recon)
 - [Offensive Security](#offensive-security)
 - [Defensive & Blue Team](#defensive--blue-team)
@@ -25,6 +26,17 @@ Tools are grouped by what I use them **for**, not by what kind of tool they are.
 - [Dev & Full-Stack](#dev--full-stack)
 - [Books, Cheat Sheets & Learning](#books-cheat-sheets--learning)
 - [Source Repos](#source-repos)
+
+---
+
+## Runbooks
+
+Field-tested playbooks for when something is on fire — or about to be. Living documents; PRs welcome.
+
+- **[Cybersecurity Incident Response](./runbooks/cybersecurity-incident-response.md)** — Universal IR playbook covering the full NIST 800-61r2 lifecycle, plus scenario quick plays for ransomware, BEC, malware, phishing, data exfiltration, DDoS, lost devices, and web-app compromise. Time-to-first-action under 30 minutes for every scenario.
+- **[Compliance Runbook](./runbooks/compliance-runbook.md)** — Cross-framework reference for HIPAA, HITECH, NIST CSF 2.0, NIST 800-53, NIST 800-171/CMMC, SOC 2, PCI DSS, GDPR, and CCPA. Includes control mappings, audit-prep checklists, an annual compliance calendar, and the most common findings to avoid.
+
+See the [runbooks index](./runbooks/) for the full list.
 
 ---
 
