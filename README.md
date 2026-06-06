@@ -19,6 +19,7 @@ Tools are grouped by what I use them **for**, not by what kind of tool they are.
 - [Runbooks](#runbooks)
 - [Cool Apps](#cool-apps)
 - [OSINT & Recon](#osint--recon)
+- [Exposure Discovery](#exposure-discovery)
 - [Offensive Security](#offensive-security)
 - [Defensive & Blue Team](#defensive--blue-team)
 - [Compliance & GRC](#compliance--grc)
@@ -79,6 +80,70 @@ No install, no API key — just open a tab and dig.
 - [WiGLE](https://wigle.net) — Crowdsourced map of Wi-Fi networks and cell towers worldwide; useful for wireless recon and geolocation.
 - [OSINT Industries](https://www.osint.industries) — Reverse-lookup engine: feed it an email or phone, get back linked accounts across 600+ platforms.
 - [Insecam](https://www.insecam.org) — Directory of unsecured/public IP cameras worldwide; cautionary tale on default credentials and exposure.
+
+## Exposure Discovery
+
+Finding the files, buckets, repos, and infrastructure that *shouldn't* be public but already are. The "what would a curious outsider stumble across?" layer — use it on your own org before someone else does. Inspired by [Applied Awareness — *Finding Public Files That Probably Shouldn't Be Public*](https://appliedawareness.ca/finding-public-files-that-probably-shouldnt-be-public/).
+
+### Dorking & Search Operators
+
+- [DorkSearch](https://dorksearch.com/) — Pre-built Google dork templates; pick a category and go.
+- [OneDorkForAll](https://github.com/HackShiv/OneDorkForAll/tree/main/dorks) — Big curated dork pack organized by target type.
+- [Gh0st D0rk Killer](https://github.com/theGh0stfaceKiller/Gh0st_D0rk_Killer) — Automated dork runner with rotating proxies.
+- [Deep Dork Web](https://guilherme-moraiss.github.io/Deep-Dork-Web/) — Browseable dork catalog with live links.
+- [DorkTerm](https://yogsec.github.io/DorkTerm/) — Terminal-style dork builder UI.
+- [OSINT-CSE](https://github.com/paulpogoda/OSINT-CSE) — Google Custom Search Engines tuned for OSINT.
+- [One-Liner-OSINT](https://github.com/yogsec/One-Liner-OSINT) — Single-line dork recipes you can paste straight into a search bar.
+- [Dorks Collections List](https://github.com/cipher387/Dorks-collections-list) — Meta-list of dork repos worth crawling.
+
+### Alternative Search Engines
+
+Google indexes the most, but it's not always the right tool. Different engines surface different corners of the web.
+
+- [DuckDuckGo](https://duckduckgo.com) — Better than Google for forums, Telegram channels, and content Google demotes.
+- [Yandex](https://yandex.com) — Best coverage of Russian-language and reverse-image-search results.
+- [Baidu](https://www.baidu.com) — China-region coverage Google can't match.
+- [eTools Meta Search](https://www.etools.ch/) — Privacy-friendly meta-search across 16+ engines.
+- [AllTheInternet](https://www.alltheinternet.com/) — Quick switch between dozens of search engines on one page.
+- [IntelTechniques Search Tools](https://inteltechniques.com/tools/Search.html) — Michael Bazzell's hand-built OSINT search forms.
+- [Search Engines With Own Indexes](https://seirdy.one/posts/2021/03/10/search-engines-with-own-indexes/) — Curated list of engines that aren't just Google/Bing wrappers.
+- [Search Engine Colossus](https://www.searchenginecolossus.com/) — International directory of country-specific search engines.
+- [SearchTweaks](https://searchtweaks.com/) — Power-user URL hacks for tuning the major engines.
+
+### Exposed Infrastructure & Certificate Search
+
+- [Censys](https://search.censys.io/) — Shodan's serious cousin; deep cert + host data with great filtering.
+- [PublicWWW](https://publicwww.com/) — Search the source code of the entire web; great for finding reused analytics IDs and shared dev fingerprints.
+- [crt.sh](https://crt.sh/) — Free certificate-transparency log search; the fastest way to map a domain's subdomains.
+- [ZoomEye](https://www.zoomeye.org/) — China-based Shodan alternative; surfaces hosts the others miss.
+- [FOFA](https://fofa.info/) — Cyberspace mapping engine; strong on regional infrastructure.
+- [LeakIX](https://leakix.net/) — Indexes exposed services *and* leaked data on them.
+- [Netlas](https://netlas.io/) — Internet-scan search with a generous free tier.
+- [Onyphe](https://search.onyphe.io/) — Cyber-defense search engine; threat-intel slant.
+- [GreyNoise](https://www.greynoise.io/) — Tells you which IPs are background internet noise vs targeted at *you*.
+- [WhoXY](https://www.whoxy.com/) — Historical and reverse WHOIS; pivot from a domain to everything its owner registered.
+- [BuiltWith](https://builtwith.com/) — Tech-stack fingerprinting; what a site runs and what it used to run.
+- [Wappalyzer](https://www.wappalyzer.com/) — Same idea, browser extension or API.
+- [DNSDumpster](https://dnsdumpster.com/) — Free DNS recon with a clean visual map.
+- [SecurityTrails](https://securitytrails.com/) — Historical DNS + WHOIS data; great for tracking infrastructure changes.
+- [ViewDNS](https://viewdns.info/) — 30+ free DNS tools on one page.
+- [URLScan](https://urlscan.io/) — Submit a URL, get a full scan and a public history of what that URL has served.
+
+### Cloud Buckets & Object Storage
+
+- [Open Buckets](https://openbuckets.io/) — Search engine for publicly exposed S3/Azure/GCP buckets.
+- [GreyHat Warfare](https://buckets.grayhatwarfare.com/) — The OG bucket search; also has the best shortened-URL search around.
+- [OSINT.Sh Buckets](https://osint.sh/buckets/) — Free bucket lookup with name-pattern matching.
+- [SOCRadar BlueBleed](https://socradar.io/labs/bluebleed/) — Check whether your domain showed up in known bucket-leak datasets.
+- [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump) — Brute-force S3 bucket names from a wordlist and dump what's open.
+- [S3Scanner](https://github.com/sa7mon/S3Scanner) — Multi-provider bucket enumerator and permission auditor.
+- [CloudBrute](https://github.com/0xsha/CloudBrute) — Discover buckets, apps, and storage across AWS, Azure, GCP, and more.
+
+### File Metadata
+
+- [ExifTool](https://exiftool.org/) — The universal metadata reader/writer; pulls EXIF, GPS, author, and software fingerprints out of nearly any file.
+- [Metagoofil](https://github.com/laramies/metagoofil) — Harvests metadata from public documents indexed for a target domain.
+- [No Nonsense Intel — Adverse Media](https://www.no-nonsense-intel.com/adverse-media-search-tool) — Adverse-media search tool useful when the "public file" you're hunting is a news mention.
 
 ## Offensive Security
 
