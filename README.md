@@ -185,6 +185,7 @@ The agents I'd actually clone and try — stars, recent commits, and a working R
 - [Decepticon](https://github.com/PurpleAILAB/Decepticon) — Autonomous red-team agent; fast-moving project with strong community traction.
 - [Burp AI Agent](https://github.com/six2dez/burp-ai-agent) — Burp Suite extension that adds built-in MCP, AI-assisted analysis, and AI-driven active/passive scanning.
 - [hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) — "Helping ethical hackers use LLMs in 50 lines of code"; great starting point for your own agent.
+- [Darkmoon](https://github.com/ASCIT31/Dark-Moon) — Open-source autonomous AI pentest platform and MCP host; per-tech offensive sub-agents, Active Directory and Kubernetes, orchestrates 80+ offensive tools with an evidence trail per finding.
 - [Reaper](https://github.com/ghostsecurity/reaper) — Ghost Security's live validation proxy; tests web-app vulns with AI in the loop.
 - [Nebula](https://github.com/berylliumsec/nebula) — AI-powered pentest assistant; recon, note-taking, and vuln analysis.
 - [Agentic Radar](https://github.com/splx-ai/agentic-radar) — Security scanner *for* LLM agentic workflows; the meta tool you need if you ship agents.
